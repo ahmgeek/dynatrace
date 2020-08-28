@@ -3,7 +3,7 @@
 
 - [ ] Create a presentation, that shows what Dynatrace provides for k8s and also what can be improved / what you would expect on top
 - [x] Install Prometheus via Prometheus Operator
-- [ ] Install Keptn (keptn.sh) on the K8s cluster and deploy its sample app: carts
+- [x] Install Keptn (keptn.sh) on the K8s cluster and deploy its sample app: carts
 - [ ] Create a presentation that covers what keptn provides and - if so - what can be improved
 - [ ] Manually add a Scrape Job to Prometheus for the carts service (← sample app) to get monitoring data
 - [ ] Manually set an Alert Rule for Prometheus to get alerts in case of a problem, e.g., response time degradation
