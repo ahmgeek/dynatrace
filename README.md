@@ -1,5 +1,5 @@
 # dynatrace
-- [ ] Get a Dynatrace Trial License and instrument a K8s cluster and instrument a sample application
+- [x] Get a Dynatrace Trial License and instrument a K8s cluster and instrument a sample application
 
 - [ ] Create a presentation, that shows what Dynatrace provides for k8s and also what can be improved / what you would expect on top
 - [ ] Install Prometheus via Prometheus Operator
