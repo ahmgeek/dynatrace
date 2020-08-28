@@ -1,0 +1,7 @@
+{
+   "client_id":1234569,
+   "sender_iban":"AT0-bla-bla",
+   "receiver_iban":"AT0-blabla-number2",
+   "amount":200.33,
+   "currency":"USD"
+}

@@ -1,0 +1,89 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (6.0.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.1, >= 2.1.8)
+    ast (2.4.0)
+    coderay (1.1.2)
+    concurrent-ruby (1.1.5)
+    diff-lcs (1.3)
+    factory_bot (5.0.2)
+      activesupport (>= 4.2.0)
+    faker (2.2.1)
+      i18n (>= 0.8)
+    i18n (1.6.0)
+      concurrent-ruby (~> 1.0)
+    jaro_winkler (1.5.3)
+    method_source (0.9.2)
+    minitest (5.11.3)
+    nio4r (2.5.1)
+    parallel (1.17.0)
+    parser (2.6.4.0)
+      ast (~> 2.4.0)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    puma (4.1.0)
+      nio4r (~> 2.0)
+    rack (2.0.7)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rainbow (3.0.0)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
+    rspec-core (3.8.2)
+      rspec-support (~> 3.8.0)
+    rspec-expectations (3.8.4)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-mocks (3.8.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-support (3.8.2)
+    rt_rubocop_defaults (1.1.0)
+      rubocop (~> 0.68)
+    rubocop (0.74.0)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.6)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    rubocop_runner (2.2.0)
+    ruby-progressbar (1.10.1)
+    seg (1.2.0)
+    shotgun (0.9.2)
+      rack (>= 1.0)
+    syro (3.1.1)
+      rack (>= 1.6.0)
+      seg
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    unicode-display_width (1.6.0)
+    zeitwerk (2.1.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  factory_bot
+  faker
+  pry
+  puma
+  rack
+  rack-test
+  rspec
+  rt_rubocop_defaults
+  rubocop_runner (~> 2.1)
+  shotgun
+  syro
+
+BUNDLED WITH
+   2.0.2

@@ -1,0 +1,7 @@
+version: '3.2'
+services:
+  ruby_app:
+    build: .
+    ports:
+      - 5500:5500
+    container_name: ruby_app

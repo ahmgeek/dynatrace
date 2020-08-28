@@ -1,0 +1,4 @@
+require: rt_rubocop_defaults
+
+Metrics/AbcSize:
+  Enabled: false
