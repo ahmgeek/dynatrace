@@ -23,3 +23,7 @@ releases:
     chart: dynatrace/dynatrace-oneagent-operator
     <<: *values
     <<: *dynatrace
+
+  - name: accounts
+    chart: ../charts/accounts
+    <<: *dynatrace
