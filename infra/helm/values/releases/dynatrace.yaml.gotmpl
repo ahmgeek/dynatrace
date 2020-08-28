@@ -1,0 +1,8 @@
+platfrom: "kubernetes"
+
+oneagent:
+  apiUrl: {{ .Values.environment.apiUrl }}
+
+secret:
+  apiToken: {{ requiredEnv "DYNATRACE_API_TOKEN" | quote }}
+  paasToken: {{ requiredEnv "PAAS_TOKEN" | quote }}

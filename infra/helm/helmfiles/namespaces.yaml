@@ -1,0 +1,8 @@
+bases:
+  - ../commons/environments.yaml
+---
+releases:
+  - name: dynatrace
+    chart: ../charts/namespaces
+    values:
+    - name: dynatrace

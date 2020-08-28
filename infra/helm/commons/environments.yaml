@@ -1,0 +1,7 @@
+environments:
+  staging:
+    values:
+      - ../values/environments/{{ .Environment.Name }}.yaml
+  production:
+    values:
+      - ../values/environments/{{ .Environment.Name }}.yaml

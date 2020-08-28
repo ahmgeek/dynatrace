@@ -1,0 +1,25 @@
+bases:
+  - ../commons/environments.yaml
+---
+templates:
+  default: &default
+    namespace: dynatrace
+    labels:
+      helmfile: platform
+
+  values: &values
+    values:
+      - ../values/releases/{{`{{ .Release.Name }}`}}.yaml.gotmpl
+
+  dynatrace: &dynatrace
+    namespace: dynatrace
+
+repositories:
+  - name: dynatrace
+    url: https://raw.githubusercontent.com/Dynatrace/helm-charts/master/repos/stable/
+
+releases:
+  - name: dynatrace
+    chart: dynatrace/dynatrace-oneagent-operator
+    <<: *values
+    <<: *dynatrace
