@@ -17,6 +17,8 @@ templates:
 repositories:
   - name: dynatrace
     url: https://raw.githubusercontent.com/Dynatrace/helm-charts/master/repos/stable/
+  - name: bitnami
+    url: https://charts.bitnami.com/bitnami
 
 releases:
   - name: dynatrace
@@ -27,3 +29,13 @@ releases:
   - name: accounts
     chart: ../charts/accounts
     <<: *dynatrace
+
+  - name: prometheus-operator
+    chart: bitnami/prometheus-operator
+    <<: *values
+    <<: *dynatrace
+
+  - name: thanos
+    chart: bitnami/thanos
+    <<: *dynatrace
+    <<: *values

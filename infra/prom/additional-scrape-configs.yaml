@@ -1,0 +1,45 @@
+- job_name: carts-sockshop-dev
+  honor_timestamps: false
+  scrape_interval: 5s
+  scrape_timeout: 5s
+  metrics_path: /prometheus
+  scheme: http
+  static_configs:
+  - targets:
+    - carts.sockshop-dev:80
+- job_name: carts-sockshop-staging
+  honor_timestamps: false
+  scrape_interval: 5s
+  scrape_timeout: 5s
+  metrics_path: /prometheus
+  scheme: http
+  static_configs:
+  - targets:
+    - carts-primary.sockshop-staging:80
+- job_name: carts-sockshop-staging-canary
+  honor_timestamps: false
+  scrape_interval: 5s
+  scrape_timeout: 5s
+  metrics_path: /prometheus
+  scheme: http
+  static_configs:
+  - targets:
+    - carts-canary.sockshop-staging:80
+- job_name: carts-sockshop-production
+  honor_timestamps: false
+  scrape_interval: 5s
+  scrape_timeout: 5s
+  metrics_path: /prometheus
+  scheme: http
+  static_configs:
+  - targets:
+    - carts-primary.sockshop-production:80
+- job_name: carts-sockshop-production-canary
+  honor_timestamps: false
+  scrape_interval: 5s
+  scrape_timeout: 5s
+  metrics_path: /prometheus
+  scheme: http
+  static_configs:
+  - targets:
+    - carts-canary.sockshop-production:80

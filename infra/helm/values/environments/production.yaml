@@ -1,2 +1,14 @@
 environment:
+  prometheus-operator:
+    tag: 0.41.0-debian-10-r5
+
+    prometheus:
+     tag: 2.19.2-debian-10-r6
+
+    configmap-reloader:
+      tag: 0.4.0-debian-10-r14
+
+  thanos:
+    tag: 0.13.0-scratch-r14
+
   apiUrl: https://gbc98822.live.dynatrace.com/api
